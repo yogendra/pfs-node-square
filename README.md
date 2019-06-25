@@ -4,13 +4,11 @@ A sample JavaScript function that multiplies a number by itself, returning the s
 
 ## Deployment
 
-This assumes that the default namespace was initialized with credentials for your `DOCKER_ID` on [Docker Hub](https://docs.docker.com/docker-hub/).
-
 ```bash
 pfs function create square \
---git-repo https://github.com/projectriff-samples/node-square  \
---artifact square.js \
---verbose
+    --git-repo https://github.com/yogedra/pfs-node-square.git  \
+    --artifact square.js \
+    --verbose
 ```
 
 ## Invoke the function.
